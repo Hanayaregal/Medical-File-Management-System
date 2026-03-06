@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Medical File Management System</title>
-<link rel="stylesheet" href="style.css">
-<!-- Font Awesome for search icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical File Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
 <h1>Medical File Management System</h1>
 
 <div class="container">
 
+  <!-- Top Row: Form + Search -->
   <div class="top-row">
 
     <!-- Add Patient Form -->
@@ -43,24 +43,25 @@
 
   </div>
 
-  <!-- Table to display results -->
-  <table>
-    <thead>
-      <tr>
-        <th>Card Number</th>
-        <th>Name</th>
-        <th>Disease</th>
-        <th>Date</th>
-        <th>Doctor</th>
-      </tr>
-    </thead>
-    <tbody id="tableBody">
-    </tbody>
-  </table>
+  <!-- Patient Table -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Card Number</th>
+          <th>Name</th>
+          <th>Disease</th>
+          <th>Date</th>
+          <th>Doctor</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
