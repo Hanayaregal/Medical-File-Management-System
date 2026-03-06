@@ -47,3 +47,60 @@ A simple **web-based application** for managing patient records. This project al
 1. **Clone the Repository**
 ```bash
 git clone https://github.com/Hanayaregal/Medical-File-Management-System.git
+
+
+Open the Project
+
+Open the index.html file in your web browser.
+
+No server is required; works locally.
+
+Add a Patient Record
+
+Fill out the form on the left side.
+
+Click “Add Record” to save.
+
+Search for a Patient
+
+Enter the Card Number in the search box.
+
+Click “Search” to find the patient.
+
+Click “Show All” to display all patients.
+
+Project Structure
+Medical-File-Management-System/
+│
+├── index.html        # Main HTML page
+├── style.css         # CSS file for styling and responsiveness
+├── script.js         # JavaScript logic for adding/searching/displaying patients
+└── README.md         # Project documentation
+Screenshots
+Add Patient Record
+
+Search Patient
+
+Show All Records
+
+Note: Screenshots folder is optional. You can capture images of your app and save them in a screenshots/ folder.
+
+Future Improvements
+
+Add Edit/Delete functionality for records.
+
+Add filter by disease or doctor name.
+
+Migrate to a backend database (like MySQL or Firebase) for multi-device access.
+
+Add authentication for secure access.
+
+Author
+
+Solomon Worku (Hana Yaregal)
+Final Year Software Engineering Student
+GitHub Repository
+
+License
+
+This project is open-source and free to use for educational purposes.
