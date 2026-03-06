@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Medical File Management System</title>
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome for search icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<h1>Medical File Management System</h1>
+
+<div class="container">
+
+  <div class="top-row">
+
+    <!-- Add Patient Form -->
+    <div class="form-section">
+      <h2>Add Patient Record</h2>
+      <input type="text" id="cardNumber" placeholder="Card Number">
+      <input type="text" id="name" placeholder="Patient Name">
+      <input type="text" id="disease" placeholder="Disease">
+      <input type="date" id="date">
+      <input type="text" id="doctor" placeholder="Doctor Name">
+      <button onclick="addPatient()">Add Record</button>
+      <p id="message"></p>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <h2>Search Patients</h2>
+      <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="searchCard" placeholder="Enter Card Number">
+      </div>
+      <div class="search-buttons">
+        <button onclick="searchPatient()">Search</button>
+        <button onclick="showAll()">Show All</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Table to display results -->
+  <table>
+    <thead>
+      <tr>
+        <th>Card Number</th>
+        <th>Name</th>
+        <th>Disease</th>
+        <th>Date</th>
+        <th>Doctor</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
